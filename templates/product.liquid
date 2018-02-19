@@ -1,0 +1,14 @@
+{% include 'breadcrumb' %}
+
+{% if product.metafields.CustomProductDesign.IsHidden == 1 %}
+	Product not available
+{% else %}
+
+<div class="row">
+  {% section 'product-sidebar' %}
+  {% section 'product-template' %}
+</div>
+
+{% section 'recently-viewed-products' %}
+
+{% endif %}
